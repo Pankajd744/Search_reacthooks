@@ -31,6 +31,7 @@ function Searchbar() {
   //delete
   const ondelete = (id) => {
     axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`);
+    //second way
     // axios.delete("https://jsonplaceholder.typicode.com/todos/" + id).then(res=>console.log("res",res))
     getdata();
   };
